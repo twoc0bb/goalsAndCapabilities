@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Capabilities and Goals</title>
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Finlandica:ital@1&display=swap');
+         body{
+         font-family: Finlandica;
+         }
+         .ghost{
+         display:none
+         }
+         .collapsible {
+         background-color: #eee;
+         color: #444;
+         cursor: pointer;
+         padding: 18px;
+         width: 100%;
+         border: none;
+         text-align: left;
+         outline: none;
+         font-size: 15px;
+         }
+         /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+         .active, .collapsible:hover {
+         background-color: #ccc;
+         }
+         /* Style the collapsible content. Note: hidden by default */
+         .content {
+         padding: 0 18px;
+         display: none;
+         overflow: hidden;
+         /*background-color: #f1f1f1;*/
+         background-color: #ffffff;
+         }
+         button{
+         font-weight: bold;
+         }
+         .footer{
+         position:relative;
+         bottom: 0px;
+         }
+      </style>
+   </head>
+   <body>
+      <h1 style="text-align: center;">Capabilities and Goals</h1>
+      <h2 style="text-align: center;">Ethan Arthur</h2>
+      <button type="button" class="collapsible">What is a SMART goal?</button>
+      <div class="content">
+         <p>A SMART goal is a personal goal that follows the SMART acronym to make sure that it is:</p>
+         <ul>
+            <li><b>S</b>pecific</li>
+            <li><b>M</b>easurable</li>
+            <li><b>A</b>chievable</li>
+            <li><b>R</b>ealistic</li>
+            <li><b>T</b>imely</li>
+         </ul>
+         <img src="https://ixcela.com/assets/uploads/ixcela-smart-goal-examples/SMART_GOAL.png"  width="500" alt="smart goals">
+         <p>This allows for a reasonable goal that can be completed realistically, providing motivation as it is seen as completable and that it is measurable so results can be easily seen. Due to this the chances of completing this goal are much greater, while other goals can be vague SMART goals give a sense of direction.</p>
+      </div>
+      <button type="button" class="collapsible">My Learning Goal</button>
+      <div class="content">
+         <b>The Goal</b>
+         <p>My learning goal is to achieve a higher average grade in French this semester than I did last semester by spending more time revising what I have learned.</p>
+         <p>This is important because learning a language requires constant revision to make the knowledge stay, completing this goal will help me improve academically and with my knowledge of the language.</p>
+         <b>My Strategies</b>
+         <ul>
+            <li>On Mondays, Wednesdays and Thursdays I will spend at least 30 minutes revising the French that I have learned throughout the week.</li>
+            <li>During class I will make sure to take notes of certain topics or ideas that I need to revise further, I can then revise these during the lesson or if I do not have the time I will revise them during the 30 minutes after school.</li>
+         </ul>
+         <img src="https://assets.teenvogue.com/photos/5df3bb7fef15ab0008b44766/16:9/w_2560%2Cc_limit/GettyImages-172413295.jpg" width="300" alt="">
+      </div>
+      <button type="button" class="collapsible">My Personal Goal</button>
+      <div class="content">
+         <b>The Goal</b>
+         <p>My personal goal is to create a portfolio of at least three programming projects that I have created myself, so that I can improve my computer and programming skills.</p>
+         <p>This is important to me because I study digital technologies and robotics at school helping me in my classes and also because I have a large interest in these topics and wish to pursue a career in computers and software.</p>
+         <b>My Strategies</b>
+         <ul>
+            <li>I will spend at least one hour of time learning about or doing programming on days that I do not have school.</li>
+            <li>I will set deadlines for my projects each week, so that I feel motivated to complete them and stay on track with my goal.</li>
+         </ul>
+         <img src="https://thumbs.dreamstime.com/b/modern-computer-programming-code-screen-showing-random-scripts-113805394.jpg" width="300" alt="">
+      </div>
+      <button type="button" class="collapsible">Capabilities</button>
+      <div class="content">
+         <p><b>Capabilities Required For My Goals:</b></p>
+         <p><b>Learning Goal</b></p>
+         <ul>
+            <li>Literacy</li>
+            <li>Intercultural Understanding</li>
+         </ul>
+         <p><b>Personal Goal</b></p>
+         <ul>
+            <li>ICT Skills</li>
+            <li>Critical and Creative Thinking</li>
+            <li>Numeracy</li>
+         </ul>
+         <p><b>How do These Capabilities Apply?</b></p>
+         <p>All of these capabilities play a major role in my goals and the completion of them for a variety of reasons.</p>
+         <p>My learning goal is about learning and revising French, which has a heavy focus on reading and writing the language requiring literacy. It also requires Intercultural Understanding as a part of learning a language is about learning about the country and culture that it originates from and where it is spoken.</p>
+         <p>
+            My personal goal focuses on programming and computer science which requires an understanding of
+            ICT so that I can understand computers and the technology required to program them. Critical and
+            Creative thinking is essential so that I can understand the logic behind programming and problem
+            solve when things go wrong. Numeracy is also very important, as when reading programs, computers
+            use mathematics constantly to calculate inputs or draw images to a screen, understanding this
+            will allow me to improve greatly in my understanding and execution of programming.
+         </p>
+      </div>
+      <p class="footer" style="font-size: 11px;">Last Edit 28/07/2022, 527 Words</p>
+      <script>
+         var coll = document.getElementsByClassName("collapsible");
+         var i;
+         
+         for (i = 0; i < coll.length; i++) {
+             coll[i].addEventListener("click", function() {
+             this.classList.toggle("active");
+             var content = this.nextElementSibling;
+             if (content.style.display === "block") {
+                 content.style.display = "none";
+             } else {
+                 content.style.display = "block";
+             }
+         });
+         }
+      </script>
+   </body>
+</html>
